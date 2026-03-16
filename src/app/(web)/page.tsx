@@ -14,10 +14,10 @@ export default function Home() {
       />
       <Navbar />
 
-
       <main className="relative w-full min-h-200 max-w-4xl flex flex-col gap-12 items-center justify-center mx-auto">
         <h1 className="h1 xl:text-6xl! text-center text-white">
-          Join your mates <span className="text-sky-blue">worldwide</span> to play a game of whot
+          Join your mates <span className="text-sky-blue">worldwide</span> to
+          play a game of whot
         </h1>
 
         <Button

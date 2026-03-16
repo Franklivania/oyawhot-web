@@ -29,9 +29,7 @@ export default function Navbar() {
       </Link>
 
       <aside>
-        <Button onClick={handleDownload}>
-          Download App
-        </Button>
+        <Button onClick={handleDownload}>Download App</Button>
       </aside>
 
       <Modal

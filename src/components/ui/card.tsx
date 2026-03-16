@@ -62,7 +62,11 @@ CardHeader.displayName = "CardHeader";
 
 export const CardContent = React.forwardRef<HTMLDivElement, CardSectionProps>(
   ({ className, ...props }, ref) => (
-    <div ref={ref} className={cn("px-6 pt-2 pb-12 sm:px-8", className)} {...props} />
+    <div
+      ref={ref}
+      className={cn("px-6 pt-2 pb-12 sm:px-8", className)}
+      {...props}
+    />
   )
 );
 
@@ -72,7 +76,10 @@ export const CardFooter = React.forwardRef<HTMLDivElement, CardSectionProps>(
   ({ className, ...props }, ref) => (
     <div
       ref={ref}
-      className={cn("flex items-center gap-3 px-6 pb-6 pt-4 sm:px-8 sm:pb-8", className)}
+      className={cn(
+        "flex items-center gap-3 px-6 pb-6 pt-4 sm:px-8 sm:pb-8",
+        className
+      )}
       {...props}
     />
   )

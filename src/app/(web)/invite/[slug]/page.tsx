@@ -3,7 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { use } from "react";
 
-export default function InviteDetails({ params }: { params: Promise<{ slug: string }> }) {
+export default function InviteDetails({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = use(params);
   const name = "John Doe";
   return (
@@ -12,14 +16,14 @@ export default function InviteDetails({ params }: { params: Promise<{ slug: stri
 
       <Card className="max-w-xl mx-auto mt-12 text-white py-10">
         <CardContent>
-          <h2 className="h3 text-center text-white">Join {name} to play Oyawhot</h2>
+          <h2 className="h3 text-center text-white">
+            Join {name} to play Oyawhot
+          </h2>
 
           <div className="space-y-4 w-full mx-auto my-12">
             <h4 className="h4 text-white">Copy Code</h4>
             <div className="w-full bg-black/50 rounded-2xl flex items-center justify-between px-6 py-4">
-              <span className="text-white">
-                {slug}
-              </span>
+              <span className="text-white">{slug}</span>
               <Button
                 buttonStyle={{
                   bgColor: "var(--green)",
@@ -34,11 +38,9 @@ export default function InviteDetails({ params }: { params: Promise<{ slug: stri
           </div>
         </CardContent>
         <div className="w-max mx-auto">
-          <Button>
-            Download app to join
-          </Button>
+          <Button>Download app to join</Button>
         </div>
       </Card>
     </div>
-  )
+  );
 }

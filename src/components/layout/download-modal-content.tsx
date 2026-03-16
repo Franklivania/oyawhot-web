@@ -55,7 +55,10 @@ function StoreCard({
             unoptimized
           />
         </div>
-        <Button onClick={() => openExternal(url)} className="mt-1 w-full text-sm">
+        <Button
+          onClick={() => openExternal(url)}
+          className="mt-1 w-full text-sm"
+        >
           {buttonLabel}
         </Button>
       </CardContent>
@@ -76,7 +79,9 @@ export function DownloadModalContent({
           Download Oyawhot directly from Google Play.
         </p>
         <div className="mx-auto w-max">
-          <Button onClick={() => openExternal(androidUrl)}>Get it on Play Store</Button>
+          <Button onClick={() => openExternal(androidUrl)}>
+            Get it on Play Store
+          </Button>
         </div>
       </div>
     );
@@ -89,7 +94,9 @@ export function DownloadModalContent({
           Download Oyawhot directly from the App Store.
         </p>
         <div className="mx-auto w-max">
-          <Button onClick={() => openExternal(iosUrl)}>Download on App Store</Button>
+          <Button onClick={() => openExternal(iosUrl)}>
+            Download on App Store
+          </Button>
         </div>
       </div>
     );
@@ -98,8 +105,8 @@ export function DownloadModalContent({
   return (
     <div className={cn("space-y-6 text-white", className)}>
       <p className="text-center text-sm text-white/85">
-        Install Oyawhot on your phone by clicking a store button
-        or scanning a QR code.
+        Install Oyawhot on your phone by clicking a store button or scanning a
+        QR code.
       </p>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
