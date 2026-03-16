@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #270245;
+  --primary-alpha:#440378;
+  --primary-dark: #1B0130;
+  --primary-light: #8201C8;
+  --mustard: #F9B329;
+  --mustard-dark: #D48C00;
+  --sky-blue: #0BCAFF;
+  --green: #00A71C;
+  --green-dark: #00400B;
+  --black: #212121;
+  --black-2: #000000;
+  --brown: #401019;
+  --font-sans: "Rammetto One", sans-serif;
+}
+
+@font-face {
+  font-family: "Rammetto One";
+  src: url("/fonts/RammettoOne.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --color-primary: var(--primary);
+  --color-primary-alpha: var(--primary-alpha);
+  --color-primary-dark: var(--primary-dark);
+  --color-mustard: var(--mustard);
+  --color-mustard-dark: var(--mustard-dark);
+  --color-sky-blue: var(--sky-blue);
+  --color-green: var(--green);
+  --color-green-dark: var(--green-dark);
+  --color-black: var(--black);
+  --color-brown: var(--brown);
+  --breakpoint-8xl: 88rem;
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-rammetto-one);
+}
+
+.h1 {@apply text-2xl sm:text-3xl md:text-4xl font-bold;}
+.h2 {@apply text-xl sm:text-2xl md:text-3xl font-bold;}
+.h3 {@apply text-lg sm:text-xl md:text-2xl font-bold;}
+.h4 {@apply text-base sm:text-lg md:text-xl font-bold;}
+.h5 {@apply text-sm sm:text-base md:text-lg font-bold;}
+.h6 {@apply text-xs sm:text-sm md:text-base font-bold;}
+.p {@apply text-sm sm:text-base md:text-base font-normal;}
+.small {@apply text-xs sm:text-sm font-normal;}
