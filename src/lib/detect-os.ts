@@ -48,8 +48,7 @@ export function detectOS(input?: DetectOSInput): OSInfo {
   const isWindows = /windows|win32|win64|wow64/.test(userAgent + platform);
   const isMacOS =
     !isIOS &&
-    (/macintosh|mac os x/.test(userAgent) ||
-      /mac|darwin/.test(platform));
+    (/macintosh|mac os x/.test(userAgent) || /mac|darwin/.test(platform));
   const isLinux = /linux|x11/.test(userAgent + platform);
 
   let device: OSDevice = "unknown";

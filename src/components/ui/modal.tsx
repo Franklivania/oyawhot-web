@@ -91,7 +91,8 @@ export function Modal({
     const body = document.body;
     const previousOverflow = body.style.overflow;
     const previousPaddingRight = body.style.paddingRight;
-    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
 
     body.style.overflow = "hidden";
     if (scrollbarWidth > 0) {
