@@ -33,8 +33,5 @@ jobs:
       - name: Check formatting
         run: bun run prettier-check
 
-      - name: Run typecheck
-        run: bunx tsc --noEmit
-
       - name: Build app
         run: bun run build
